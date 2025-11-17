@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 🎂</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+    style="
+      background-image: url('DARN.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    "
+    class="flex justify-center h-screen items-center"
+  >
+    <div
+      class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+      id="kartu"
+      class="border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+      style="background-image: url(''); background-size: cover; background-position: center;"
+    >
+      <h1 class="text-3xl">Happy Birthday🎂</h1>
+      <h1
+        class="text-4xl text-cyan-500 font-bold animate__animated animate__pulse animate__infinite"
+      >
+        Diah Ayu R. N.
+      </h1>
+      <button
+        class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+        onclick="ubahKartu()"
+      >
+        Klik Disini !
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+      let kartu = document.getElementById("kartu");
+      function ubahKartu() {
+        kartu.innerHTML = `    <h1 class="font-semibold text-black animate__animated animate__zoomIn">
+      Selamat ulang tahun, Sayang! Semoga tahun ini makin banyak kebahagiaan,
+      rezeki lancar, dan segala impian jadi kenyataan. Semoga kita terus bisa
+      bareng-bareng, seru-seruan, dan wish you all the best! 🎉🎂
+    </h1>
+    <h2 class="mt-3 animate__animated animate__fadeIn">
+      - From :  Someone who loves you but you don't care about.-
+    </h2>
+    <button
+      class="p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__zoomIn"
+      onclick="nextSlide()"
+    >
+      Next
+    </button>,
+    `;
+      }
+      function nextSlide() {
+        kartu.innerHTML = `    <h1 class="font-semibold text-black animate__animated animate__zoomIn">
+      Aku ngaku, ini salahku. Aku seharusnya lebih hati-hati sama kata-kataku. Semoga perjalanan hidupmu selalu dipenuhi kebijaksanaan, kesehatan, dan kebahagiaan.! Gaada kata-kata lagi untuk menunjukan betapa anggun dirimu. I love you without saying a word, hehehe. Have a
+      fantastic day!
+    
+    <button
+      class="p-2 bg-pink -600 text-black rounded mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated animate__delay-1s animate__zoomIn"
+      onclick="openUrk()"
+    >
+      Click to get gift !
+    </button>   
+    `;
+      }
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
